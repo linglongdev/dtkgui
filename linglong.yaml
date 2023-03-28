@@ -1,0 +1,30 @@
+package:
+  id: dtkgui
+  name: dtkgui
+  kind: lib
+  version: 5.5.22
+  descriptipon: |
+    dtkgui
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase/5.11.3.15
+- id: qtsvg/5.11.3
+- id: qtxdg/3.3.1.1
+- id: dtkcommon/5.5.3
+- id: gsettings-qt/0.2
+- id: dtkcore/5.5.26
+- id: googletest/1.8.1
+
+source:
+  kind: git
+  url: https://github.com/linuxdeepin/dtkgui.git
+  version: develop/snipe
+  commit: 9e54cba93c00d893d2c834c3317d0a8944ab997f
+
+  patch: []
+build:
+  kind: qmake
