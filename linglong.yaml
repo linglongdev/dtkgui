@@ -26,5 +26,12 @@ source:
   commit: 9e54cba93c00d893d2c834c3317d0a8944ab997f
 
   patch: []
+
+variables:
+  extra_args: |
+    -DBUILD_EXAMPLES=OFF \
+    -DBUILD_DOCS=OFF \
+    -DVERSION=${VERSION}
+
 build:
   kind: cmake
